@@ -47,10 +47,6 @@ def load_photo():
         return render_page(render_image())
 
 
-@app.errorhandler(404)
-def page_not_found(error):
-    return get_code('not_found')
-
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
